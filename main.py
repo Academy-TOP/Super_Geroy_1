@@ -1,3 +1,5 @@
+from random import randint
+
 problem_list = [
   'Живое гигантское дерево',
   'Чужая летающая тарелка',
@@ -9,3 +11,14 @@ problem_list = [
   'Черный дракон',
   'Титан'
 ]
+
+problem = problem_list[randint(0, len(problem_list)-1)]
+
+print("Угроза, с которой мы столкнулись - ", problem)
+
+print('Назовите героев, которые бы могли справиться с нашей проблемой:\n')
+
+list_of_heroes = [input(), input(), input()]
+
+print("Эти супер герои", list_of_heroes,
+ "отпавились на задание")
